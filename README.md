@@ -55,6 +55,14 @@ flowchart LR
 
 Esses arquivos são gerados em runtime e não são versionados.
 
+### Resultados atuais do runner local
+
+- `row_count = 1600`
+- `positive_rate = 0.2938`
+- `feature_count = 17`
+- `roc_auc = 0.8968`
+- `average_precision = 0.7805`
+
 ### Execução
 
 ```bash
@@ -73,3 +81,11 @@ O runner local em [main.py](main.py) foi incluído para garantir validação mes
 `feature-store-pipeline-metaflow` is an ML engineering project focused on tabular feature store construction and pipeline orchestration with `Metaflow`.
 
 The local runner in [main.py](main.py) is included so the project remains executable even when `metaflow` is not yet installed in the environment. The primary orchestration entry point is still [flow.py](flow.py).
+
+### Current local runner results
+
+- `row_count = 1600`
+- `positive_rate = 0.2938`
+- `feature_count = 17`
+- `roc_auc = 0.8968`
+- `average_precision = 0.7805`
