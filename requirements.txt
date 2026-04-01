@@ -1,0 +1,5 @@
+metaflow>=2.12,<3.0
+pandas>=2.2,<3.0
+numpy>=1.26,<3.0
+scikit-learn>=1.5,<2.0
+
