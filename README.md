@@ -4,25 +4,6 @@
 
 `feature-store-pipeline-metaflow` é um projeto de engenharia de ML com foco em construção de feature store tabular e orquestração de pipeline com `Metaflow`.
 
-### Storytelling técnico: o que é Metaflow e por que ele importa
-
-`Metaflow` é um framework de orquestração para ciência de dados e machine learning criado para organizar pipelines complexos em etapas explícitas, com artefatos versionáveis, reprodutibilidade e rastreabilidade de execução.
-
-Na prática, ele ajuda a responder um problema muito comum em ML engineering: treinar um modelo é só uma parte pequena do trabalho. Antes do treino, existem ingestão, validação, criação de features, checkpoints intermediários e persistência de artefatos. Depois do treino, existem avaliação, comparação e operacionalização.
-
-Sem uma estrutura de pipeline, esses passos costumam virar:
-
-- notebooks desconectados;
-- scripts com dependências implícitas;
-- resultados difíceis de reproduzir;
-- artefatos sem lineage clara.
-
-`Metaflow` entra justamente para evitar isso. Ele permite definir um fluxo como uma sequência explícita de etapas com `FlowSpec` e `@step`, deixando claro:
-
-- o que entra em cada etapa;
-- quais artefatos são produzidos;
-- como o estado caminha ao longo do pipeline;
-- onde um fluxo pode evoluir para paralelismo, branching e produção.
 
 ### Por que este projeto foi desenhado com Metaflow
 
@@ -149,20 +130,6 @@ O runner local em [main.py](main.py) foi incluído para garantir validação mes
 
 `feature-store-pipeline-metaflow` is an ML engineering project focused on tabular feature store construction and pipeline orchestration with `Metaflow`.
 
-### Technical storytelling: what Metaflow is and why it matters
-
-`Metaflow` is an orchestration framework for data science and machine learning pipelines. Its core value is not just scheduling code, but structuring ML work into explicit stages with reproducible artifacts and execution lineage.
-
-In real ML systems, training is only one stage in a longer chain that usually includes:
-
-- raw data ingestion
-- validation
-- feature engineering
-- model training
-- evaluation
-- artifact persistence
-
-Without pipeline orchestration, those steps often become disconnected notebooks or loosely coupled scripts. `Metaflow` helps turn them into a coherent execution graph through `FlowSpec` and `@step`.
 
 ### Why this project uses Metaflow
 
